@@ -1,4 +1,6 @@
-<?php 
+<?php
+$Token = $_GET['1164696209:AAEd3tXD17C2E2POLkQUaAd7ELlnyZnB22U'];
+$tok = json_decode(file_get_contents("https://api.telegram.org/bot".$Token."/getme"));
 header('Content-type: application/json');
 function Error_msg_json($text)
 {
